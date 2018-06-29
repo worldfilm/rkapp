@@ -52,6 +52,7 @@ export default {
     this.$router.push({path:'/Home'})
     },
     movies() {
+    	this.$router.push({path:'/videoList'})
     },
     vipag() {
     this.$router.push({path:'/Vip'})

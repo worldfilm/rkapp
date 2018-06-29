@@ -1,7 +1,6 @@
 <template>
 <div class="home">
   <div class='container_left'>
-
     <div class='content_1'>
       <h4 class="videos-title">
 				<i class="fa fa-anchor" ></i>
@@ -70,7 +69,6 @@
         </li>
       </ul>
     </div>
-
   </div>
 
 
