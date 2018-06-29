@@ -14,25 +14,26 @@
         </form>
       </div>
       <ul class="btn-group">
-        <li><a class="btn signInBtn signInCre">登陆</a></li>
-        <li><a class="btn signUpBtn signUpCre">注册</a></li>
+        <li><a class="btn signInBtn signInCre" @click="login">登陆</a></li>
+        <li><a class="btn signUpBtn signUpCre" @click="register">注册</a></li>
       </ul>
     </div>
   </div>
   <div class="header-btm">
     <div class="container">
       <ul class="navbar">
-        <li class="nav-item active"><a href="index.html">网站首页</a></li>
-        <li class="nav-item"><a href="videoList.html">国产自拍</a></li>
-        <li class="nav-item"><a href="videoList.html">黄金正片</a></li>
-        <li class="nav-item"><a href="videoList.html">日本无码</a></li>
-        <li class="nav-item"><a href="videoList.html">欧美大片</a></li>
-        <li class="nav-item"><a href="videoList.html">动漫动画</a></li>
-        <li class="nav-item"><a href="upgrade.html">获取VIP特权</a></li>
+        <li @click='home' class="nav-item active"><a>网站首页</a></li>
+        <li @click='movies' class="nav-item"><a>国产自拍</a></li>
+        <li @click='movies' class="nav-item"><a>黄金正片</a></li>
+        <li @click='movies' class="nav-item"><a>日本无码</a></li>
+        <li @click='movies' class="nav-item"><a>欧美大片</a></li>
+        <li @click='movies' class="nav-item"><a>动漫动画</a></li>
+        <li @click='vipag' class="nav-item"><a>获取VIP特权</a></li>
       </ul>
     </div>
   </div>
-</div>
+</div> 
+
 </template>
 <script>
 import Hub from '@/components/Hub';
@@ -41,20 +42,35 @@ export default {
   components: {},
   data() {
     return {
-      title: '首页'
+      title: '首页',
+      Showlogin:false,
+      ShowRegister:false,
     }
   },
   methods: {
-    left_fun() {
-      console.log('left')
+    home() {
+    this.$router.push({path:'/Home'})
     },
-    right_fun() {
-      console.log('right')
+    movies() {
+    },
+    vipag() {
+    this.$router.push({path:'/Vip'})
+    },
+    login(){
+    	Hub.$emit('change1','true');
+    	this.Showlogin=true
+    },
+    register(){
+    	Hub.$emit('change2','true');
+    	this.ShowRegister=true
     }
   },
   props: [],
   created() {
-    Hub.$on('change', (data) => { //Hub接收事件
+    Hub.$on('change1', (data) => {
+      this.title = data
+    });
+    Hub.$on('change2', (data) => { 
       this.title = data
     });
   }
@@ -62,8 +78,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .header {
-    width: 100%;
-    margin: 0 auto;
     background: #fff;
     .header-top {
         padding: 5px 0;
@@ -174,7 +188,7 @@ export default {
                     transition: 0.3s;
                     a {
                         font-size: 15px;
-                        color: #008def;
+                        color: #818486;
                         transition: 0.3s;
                     }
                 }
