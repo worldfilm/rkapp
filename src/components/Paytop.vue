@@ -58,7 +58,7 @@ export default {
     width: 100%;
     height: 290px;
     margin-bottom: 40px;
-    background-image: url("../../static/v2-pay-top-bg.jpg");
+    background: linear-gradient(to right,#aa9894, #beada3,#af9596,#e7cdbc);
     padding-top: 35px;
     .container {
         width: 1200px;
@@ -116,7 +116,7 @@ export default {
                     span {
                         font-size: 14px;
                         color: #666;
-                    } 
+                    }
                 }
             }
         }

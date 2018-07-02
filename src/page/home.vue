@@ -124,48 +124,48 @@ export default {
       list2: [{
         viewtime: '12312',
         title: '超絶倫巨乳少女！ 3 突然出来た妹は超ヤリマン女子校に通う女子校生！',
-        src: '../../static/v-cover-1.jpg',
+        src: '../static/v-cover-1.jpg',
         day: '1'
       }, {
         viewtime: '12312',
         title: '超絶倫巨乳少女！ 3 突然出来た妹は超ヤリマン女子校に通う女子校生！',
-        src: '../../static/v-cover-1.jpg',
+        src: '../static/v-cover-1.jpg',
         day: '1'
       }, {
         viewtime: '12312',
         title: '超絶倫巨乳少女！ 3 突然出来た妹は超ヤリマン女子校に通う女子校生！',
-        src: '../../static/v-cover-1.jpg',
+        src: '../static/v-cover-1.jpg',
         day: '1'
       }, ],
       list: [{
         viewtime: '12312',
         title: '超絶倫巨乳少女！ 3 突然出来た妹は超ヤリマン女子校に通う女子校生！',
-        src: '../../static/v-cover-1.jpg',
+        src: '../static/v-cover-1.jpg',
         day: '1'
       }, {
         viewtime: '12312',
         title: '超絶倫巨乳少女！ 3 突然出来た妹は超ヤリマン女子校に通う女子校生！',
-        src: '../../static/v-cover-1.jpg',
+        src: '../static/v-cover-1.jpg',
         day: '1'
       }, {
         viewtime: '12312',
         title: '超絶倫巨乳少女！ 3 突然出来た妹は超ヤリマン女子校に通う女子校生！',
-        src: '../../static/v-cover-1.jpg',
+        src: '../static/v-cover-1.jpg',
         day: '1'
       }, {
         viewtime: '12312',
         title: '超絶倫巨乳少女！ 3 突然出来た妹は超ヤリマン女子校に通う女子校生！',
-        src: '../../static/v-cover-1.jpg',
+        src: '../static/v-cover-1.jpg',
         day: '1'
       }, {
         viewtime: '12312',
         title: '超絶倫巨乳少女！ 3 突然出来た妹は超ヤリマン女子校に通う女子校生！',
-        src: '../../static/v-cover-1.jpg',
+        src: '../static/v-cover-1.jpg',
         day: '1'
       }, {
         viewtime: '12312',
         title: '超絶倫巨乳少女！ 3 突然出来た妹は超ヤリマン女子校に通う女子校生！',
-        src: '../../static/v-cover-1.jpg',
+        src: '../static/v-cover-1.jpg',
         day: '1'
       }]
     }

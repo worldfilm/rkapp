@@ -24,27 +24,27 @@ export default {
       list: [{
         title: '无限下载',
         tex: '免费下载,保存到本地',
-        src: '../../static/v2-pay-download-8da69912e5.png'
+        src: '../static/v2-pay-download-8da69912e5.png'
       }, {
         title: '极速播放',
         tex: '观看更快,体验更爽',
-        src: '../../static/v2-pay-quickplay-a4c05f0c95.png',
+        src: '../static/v2-pay-quickplay-a4c05f0c95.png',
       }, {
         title: '屏蔽广告',
         tex: '无广告,观看无干扰',
-        src: '../../static/v2-pay-nogg-a634b3f129.png',
+        src: '../static/v2-pay-nogg-a634b3f129.png',
       }, {
         title: '尊贵徽章',
         tex: '尊贵身份,如影随形',
-        src: '../../static/v2-pay-badge-568ce88dfa.png',
+        src: '../static/v2-pay-badge-568ce88dfa.png',
       }, {
         title: '多屏共享',
         tex: '移动\PC端会员权益',
-        src: '../../static/v2-pay-multiscreen-ec02a40023.png',
+        src: '../static/v2-pay-multiscreen-ec02a40023.png',
       }, {
         title: 'AV影院',
         tex: 'AV影院无限观看',
-        src: '../../static/v2-integral-AV-5be1b9e272.png',
+        src: '../static/v2-integral-AV-5be1b9e272.png',
       }]
     }
   },
