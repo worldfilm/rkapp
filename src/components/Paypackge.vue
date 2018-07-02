@@ -7,7 +7,7 @@
         <li v-for='item in list' class="package-content" data-type-id="0">
           <div class="package-money"><span>{{item.month}}</span>{{item.spanmoney}}元</div>
           <p v-text="item.tex"></p>
-          <div class=" please-login  package-login-join-btn" data-type-id="0" data-vip-type="21">立即加入</div>
+          <div class=" please-login  package-login-join-btn" data-type-id="0" data-vip-type="21" @click='fastjoin'>立即加入</div>
           <div class="package-tip" v-text="item.daymoney"></div>
         </li>
       </ul>
@@ -17,9 +17,11 @@
 </template>
 
 <script>
+import Hub from '@/components/Hub';
 export default {
   data() {
     return {
+      logoState:false,
       list: [{
         month: '1个月',
         spanmoney: '100.00',
@@ -42,7 +44,17 @@ export default {
         daymoney: '火爆1.18元/天'
       }]
     }
-  }
+  },
+  methods: {
+    fastjoin(){
+      if(this.logoState){
+        Hub.$emit('change1','true');
+        this.Showlogin=true
+      }else{
+        Hub.$emit('change3','true');
+      }
+    },
+  },
 }
 </script>
 
@@ -61,7 +73,7 @@ export default {
             height: 45px;
             line-height: 45px;
             padding-left: 20px;
-            
+
         }
         .bottom-package-container {
                 width: 100%;

@@ -34,16 +34,15 @@ name: 'App',
   },
   props: [],
   created() {
-  	Hub.$on('closed', (data) => { 
+  	Hub.$on('closed', (data) => {
       this.Showlogin = data
       this.ShowRegister = data
     });
-    Hub.$on('change1', (data) => { 
+    Hub.$on('change1', (data) => {
       this.Showlogin = data
 
     });
-    Hub.$on('change2', (data) => { 
-
+    Hub.$on('change2', (data) => {
       this.ShowRegister = data
     });
   }

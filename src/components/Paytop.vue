@@ -14,7 +14,7 @@
         <div class="top-right-no-login">
           <p>加入VIP,畅享特权</p>
           <span>最低1.20元/天</span>
-          <div class="loginbtn please-login signInBtn signInCre">登录
+          <div class="loginbtn please-login signInBtn signInCre" @click='login'>登录
           </div>
         </div>
       </div>
@@ -23,6 +23,7 @@
 </div>
 </template>
 <script>
+import Hub from '@/components/Hub';
 export default {
   data() {
     return {
@@ -48,6 +49,12 @@ export default {
 
 
     }
+  },
+  methods: {
+    login(){
+      Hub.$emit('change1','true');
+      this.Showlogin=true
+    },
   },
   components: {}
 }
