@@ -3,7 +3,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/page/Home'
 import Vip from '@/page/Vip'
-import videoList from '@/page/videoList'
 
 export default new Router({
   routes: [
@@ -19,10 +18,6 @@ export default new Router({
       path: '/Vip',
       name: 'Vip',
       component: Vip
-    },{
-      path: '/videoList',
-      name: 'videoList',
-      component: videoList
     }
   ]
 })

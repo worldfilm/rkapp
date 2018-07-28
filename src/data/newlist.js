@@ -1,4 +1,4 @@
-export const shuJu =[
+export const newslist =[
 	{
 		"head": "1新闻",
 		"time": "2018-03-1 ",
